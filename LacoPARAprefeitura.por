@@ -1,27 +1,32 @@
 programa{
 	funcao inicio(){
+		real sal, mediaSal, somaSal=0.0, mediaNf, maiorSal=0.0, perc100
+		inteiro nf, somaNf=0, quantP=0, x
+		 
 
-		inteiro x,sal,saltotal=0,salmedia,filhos,fitotal=0,fimedia
-
-		para(x=1;x<=3;x++){
-		escreva("\nDigite o salário: ")
+		para(x=1;x<=20;x++){
+		escreva("\nEntre com o seu salário: ")
 		leia(sal)
-		escreva("\nDigite quantidade de filhos: ")
-		leia(filhos)
-
-		saltotal = saltotal + sal
-		escreva("\nSaltotal é: ",saltotal)
-
-		fitotal = fitotal + filhos
-			escreva("\nFitotal é: ",fitotal)
+		escreva("\nEntre com a quantidade de filhes: ")
+		leia(nf)
+		somaSal += sal
+		somaNf += nf
+		se(maiorSal <= sal){
+			maiorSal = sal
+		}
+		se(sal<=100){
+			quantP++
+		}
 		
-
 	}
-		salmedia = saltotal / 3
-		escreva("\nA média salarial é: ",salmedia)
+	mediaSal + somaSal / 4
+	mediaNf + somaNf / 4
+	perc100 = (quantP * 100) / 4
+	escreva("\nMédia salárial: ", mediaSal)
+	escreva("\nMédia número de filhes: ", mediaNf)
+	escreva("\nMaior salário: ",maiorSal)
+	escreva("\nPercentual de pessoas que recebem até 100 reais: ", perc100)
 		
-		fimedia = fitotal / 3
-		escreva("\nA média de filhos é: ",fimedia)
 		}	
 		}
 		
@@ -32,7 +37,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 261; 
+ * @POSICAO-CURSOR = 0; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
