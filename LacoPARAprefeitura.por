@@ -1,6 +1,6 @@
 programa{
 	funcao inicio(){
-		real sal, mediaSal, somaSal=0.0, mediaNf, maiorSal=0.0, perc100
+		real sal, mediaSal=0.0, somaSal=0.0, mediaNf=0.0, maiorSal=0.0, perc100
 		inteiro nf, somaNf=0, quantP=0, x
 		 
 
@@ -19,8 +19,8 @@ programa{
 		}
 		
 	}
-	mediaSal + somaSal / 4
-	mediaNf + somaNf / 4
+	mediaSal = somaSal / 4
+	mediaNf = somaNf / 4
 	perc100 = (quantP * 100) / 4
 	escreva("\nMédia salárial: ", mediaSal)
 	escreva("\nMédia número de filhes: ", mediaNf)
@@ -37,7 +37,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 0; 
+ * @POSICAO-CURSOR = 671; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
